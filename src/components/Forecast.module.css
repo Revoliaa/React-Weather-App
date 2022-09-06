@@ -1,0 +1,80 @@
+.resultsContainer {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 40px;
+}
+
+.notFound {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.heroResultsContainer {
+    display: flex;
+    justify-content: center;
+    flex-flow: row-reverse;
+    gap: 30px;
+}
+
+.placeInfo {
+    margin-top: 20px;
+}
+
+.countryName {
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+.cityName {
+    font-size: 2.25rem;
+}
+
+.description {
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+.subResultsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.detailContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.5rem;
+}
+
+.detailContainer:first-child {
+    margin-top: 20px;
+}
+
+@media (max-width: 620px) {
+    .resultsContainer {
+        grid-template-columns: auto;
+    }
+
+    .countryName {
+        font-size: 1.2rem;
+    }
+
+    .cityName {
+        font-size: 1.75rem;
+    }
+
+    .detailContainer {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .subResultsContainer {
+        align-items: center;
+    }
+
+    .placeInfo {
+        margin-top: 0px;
+    }
+}
